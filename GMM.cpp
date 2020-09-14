@@ -9,7 +9,7 @@
 #include <vector>
 
 #include <opencv2/opencv.hpp>
-#include <highgui/ighgui.hpp>
+#include <highgui/highgui.hpp>
 #include <imgproc/mgproc.hpp>
 
 
@@ -20,7 +20,7 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 
 	VideoCapture myvideo("./video.avi");
-	int n_mixture=200, n_history=100, frame_counter = 1;
+	int n_mixture=200, n_history=100, frame_counter = 10;
 	bool use_shadow = false; 
 
 	if(myvideo.isOpened())
